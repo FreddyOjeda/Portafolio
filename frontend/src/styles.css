@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Variables para el tema claro */
+:root {
+  --background-color: lightblue;
+  --text-color: #002855;
+  --primary-color: blue;
+  --secondary-color: gray;
+  --background-pattern: linear-gradient(45deg, #eaf0ce, #dce6ba, #ced897,#bec78c,#bbbe98);
+}
+
+/* Variables para el tema oscuro */
+[data-theme="dark"] {
+  --background-color: #333;
+  --text-color: #dce6ba;
+  --primary-color: lightblue;
+  --secondary-color: lightgray;
+  --background-pattern: linear-gradient(45deg, #33415C, #023E7D, #002855, #001845, #001233);
+}
+
+/* Aplicación de variables */
+body,
+html {
+  min-height: 100%;
+  height: fit-content;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  background: var(--background-pattern);
+  animation: gradientAnimation 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Puedes usar las variables en cualquier otro lugar también */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+} 
