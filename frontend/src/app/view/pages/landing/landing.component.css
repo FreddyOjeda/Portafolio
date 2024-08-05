@@ -1,0 +1,14 @@
+.landing {
+  position: relative;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  max-height: fit-content;
+}

@@ -10,6 +10,7 @@ import { TableComponent } from './view/components/table/table.component';
 import { CardComponent } from './view/components/card/card.component';
 import { HomeComponent } from './view/pages/home/home.component';
 import { ToggleComponent } from './view/components/toggle/toggle.component';
+import { LandingComponent } from './view/pages/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ToggleComponent } from './view/components/toggle/toggle.component';
     TableComponent,
     CardComponent,
     HomeComponent,
-    ToggleComponent
+    ToggleComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
