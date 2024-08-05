@@ -30,7 +30,7 @@ img{
   animation: blink 1s step-end infinite;
 }
 
-.intro a{
+.button{
   position: fixed;
   bottom: 5%;
 }

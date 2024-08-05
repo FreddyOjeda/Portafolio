@@ -1,0 +1,19 @@
+/* countdown-timer.component.css */
+#countdown {
+    text-align: center;
+}
+
+#timer {
+    font-size: 3em;
+}
+
+.time-box {
+    background-color: var(--text-color); /* Cambia esto al color que prefieras */
+    color: var(--background-color); /* Color del texto */
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    min-width: 50px; /* Ajusta el ancho mínimo según sea necesario */
+    text-align: center;
+    border-radius: 5px; /* Puedes ajustar el radio del borde para tener esquinas redondeadas */
+}

@@ -11,6 +11,7 @@ import { CardComponent } from './view/components/card/card.component';
 import { HomeComponent } from './view/pages/home/home.component';
 import { ToggleComponent } from './view/components/toggle/toggle.component';
 import { LandingComponent } from './view/pages/landing/landing.component';
+import { CountdownTimerComponent } from './view/components/countdown-timer/countdown-timer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LandingComponent } from './view/pages/landing/landing.component';
     CardComponent,
     HomeComponent,
     ToggleComponent,
-    LandingComponent
+    LandingComponent,
+    CountdownTimerComponent
   ],
   imports: [
     BrowserModule,
