@@ -3,9 +3,9 @@
 /* Variables para el tema claro */
 :root {
   --background-color: #fefae0;
-  --text-color: #03045e;
-  --primary-color: blue;
-  --secondary-color: gray;
+  --text-color: #171717;
+  --primary-color: #d4a373;
+  --secondary-color: #d5bdaf;
   --background-pattern: linear-gradient(45deg, #eaf0ce, #dce6ba, #ced897,#bec78c,#bbbe98);
 }
 
@@ -13,8 +13,8 @@
 [data-theme="dark"] {
   --background-color: #171717;
   --text-color: #fefae0;
-  --primary-color: lightblue;
-  --secondary-color: lightgray;
+  --primary-color: #023E7D;
+  --secondary-color: #0077b6;
   --background-pattern: linear-gradient(45deg, #33415C, #023E7D, #002855, #001845, #001233);
 }
 

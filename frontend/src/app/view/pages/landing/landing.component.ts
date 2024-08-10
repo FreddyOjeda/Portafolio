@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class LandingComponent {
 
+  items: any[]= [
+    {label:'About me', value:'section1'},
+    {label:'Skills', value:'section2'},
+    {label:'History', value:'section3'},
+    {label:'Projects', value:'section4'},
+    {label:'Talk me', value:'section5'}
+  ]
+
 }

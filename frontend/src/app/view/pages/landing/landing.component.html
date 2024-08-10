@@ -1,34 +1,5 @@
 <div class="landing">
-    <nav class="navbar sticky-top navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto w-100 justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Welcome!</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section1">About me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section2">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section3">History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section4">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section5">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+    <app-nav [items]="items"></app-nav>
     <div class="sections">
         <section id="section1">
             <h2>¿Who I Am?</h2>

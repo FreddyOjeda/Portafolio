@@ -4,9 +4,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ThemeService {
-  private theme: string = 'light';
+  private theme: string = 'dark';
 
   constructor() {
+    localStorage.setItem('theme', this.theme);
     this.loadTheme();
   }
 

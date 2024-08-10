@@ -12,6 +12,8 @@ import { HomeComponent } from './view/pages/home/home.component';
 import { ToggleComponent } from './view/components/toggle/toggle.component';
 import { LandingComponent } from './view/pages/landing/landing.component';
 import { CountdownTimerComponent } from './view/components/countdown-timer/countdown-timer.component';
+import { NavComponent } from './view/components/nav/nav.component';
+import { AboutComponent } from './view/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { CountdownTimerComponent } from './view/components/countdown-timer/count
     HomeComponent,
     ToggleComponent,
     LandingComponent,
-    CountdownTimerComponent
+    CountdownTimerComponent,
+    NavComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

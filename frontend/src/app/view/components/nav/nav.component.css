@@ -1,0 +1,61 @@
+.content{
+    background-color: var(--primary-color);
+    height: 7vh;
+    position: sticky;
+    top: 0;
+}
+.nav-item {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden; /* Necesario para ocultar el pseudo-elemento durante la animación */
+}
+
+/* Pseudo-elemento para el background */
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover::before {
+    transform: translateX(0);
+}
+
+.nav-item.selected {
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    position: relative; /* Necesario para el pseudo-elemento */
+    display: block; /* Hace que el a ocupe todo el espacio del div */
+    width: 100%;
+    height: 100%;
+    padding: 10px; /* Añade algo de espacio interior */
+    box-sizing: border-box; /* Incluye el padding y borde dentro del ancho y alto */
+}
+
+/* Pseudo-elemento para la línea inferior */
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+    width: 100%;
+}
