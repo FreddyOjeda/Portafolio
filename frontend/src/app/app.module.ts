@@ -14,6 +14,18 @@ import { LandingComponent } from './view/pages/landing/landing.component';
 import { CountdownTimerComponent } from './view/components/countdown-timer/countdown-timer.component';
 import { NavComponent } from './view/components/nav/nav.component';
 import { AboutComponent } from './view/pages/about/about.component';
+import { SkillsComponent } from './view/pages/skills/skills.component';
+import { HistoryComponent } from './view/pages/history/history.component';
+import { InfoComponent } from './view/pages/info/info.component';
+import { TestComponent } from './view/pages/test/test.component';
+import { FormsModule } from '@angular/forms';
+
+import { Chart } from 'chart.js';
+import { ChartComponent } from './view/components/chart/chart.component';
+import { NgxTimelineModule } from 'ngx-timeline';
+import { MzdTimelineModule } from 'ngx-mzd-timeline/public-api';
+import { TimelineComponent } from './view/components/timeline/timeline.component';
+import { ButtonTooltipComponent } from './view/components/button-tooltip/button-tooltip.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +40,19 @@ import { AboutComponent } from './view/pages/about/about.component';
     LandingComponent,
     CountdownTimerComponent,
     NavComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponent,
+    HistoryComponent,
+    InfoComponent,
+    TestComponent,
+    ChartComponent,
+    TimelineComponent,
+    ButtonTooltipComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

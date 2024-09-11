@@ -1,0 +1,144 @@
+/* Sección de introducción */
+.section.intro {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 2rem;
+    text-align: center;
+  
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: var(--primary-color);
+    }
+  
+    p {
+      margin: 0.5rem 0;
+    }
+  
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+  }
+  
+  /* Estilos de la línea de tiempo */
+  .timeline {
+    position: relative;
+    padding: 2rem 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  
+    .info {
+      text-align: center;
+      margin-bottom: 2rem;
+  
+      h2 {
+        font-size: 1.8rem;
+        color: var(--primary-color);
+      }
+  
+      p {
+        margin: 0.5rem 0;
+      }
+  
+      a {
+        color: var(--link-hover-color);
+        text-decoration: underline;
+      }
+    }
+  
+    /* La lista de eventos de la línea de tiempo */
+    ol {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1200px;
+  
+      /* Línea de tiempo */
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: var(--primary-color);
+        transform: translateY(-50%);
+      }
+  
+      /* Cada evento */
+      li {
+        position: relative;
+        width: calc(100% / 12); /* Ajusta esto según la cantidad de eventos */
+        text-align: center;
+  
+        &:not(:last-child):after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 4px;
+          height: 100%;
+          background-color: var(--primary-color);
+          transform: translateY(-50%);
+        }
+  
+        /* Los círculos de la línea de tiempo */
+        div {
+          position: relative;
+          width: 30px;
+          height: 30px;
+          background-color: var(--secondary-color);
+          border-radius: 50%;
+          margin: 0 auto;
+          z-index: 1;
+  
+          /* La fecha de cada evento */
+          time {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            margin-top: 0.5rem;
+          }
+        }
+  
+        /* Estilos para mostrar de forma alternada arriba/abajo */
+        &:nth-child(odd) {
+          transform: translateY(-20px);
+        }
+  
+        &:nth-child(even) {
+          transform: translateY(20px);
+        }
+      }
+    }
+  }
+  
+  /* Footer */
+  .page-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--background-color-light);
+    color: var(--text-color);
+  
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+  
+      img {
+        margin-left: 0.5rem;
+      }
+  
+      &:hover {
+        color: var(--link-hover-color);
+      }
+    }
+  }
+  

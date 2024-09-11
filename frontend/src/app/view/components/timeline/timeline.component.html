@@ -1,0 +1,9 @@
+<div class="frame mx-5 my-3">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="line">
+      <div class="point" *ngFor="let e of events">
+        <app-button-tooltip [title]="e.date" [description]="e.title"></app-button-tooltip>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+form {
+    background-color: var(--background-color-light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-light);
+}
+
+form .btn {
+    background-color: var(--secondary-color);
+    color: var(--button-text);
+}
+
+form .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul .btn {
+    color: var(--secondary-color);
+}
+
+ul .btn:hover {
+    color: var(--secondary-color);
+}

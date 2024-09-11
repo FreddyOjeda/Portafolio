@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Dashboard</h2>
+    <div class="row d-flex justify-content-around">
+        <div class="col-lg-5 col-md-10 col-sm-10 card">
+            <app-chart [data]="barChartInfo"></app-chart>
+        </div>
+        <div class="col-lg-5 col-md-10 col-sm-10 card">
+            <app-chart [data]="lineChartInfo"></app-chart>
+        </div>
+        <div class="col-lg-5 col-md-10 col-sm-10 card">
+            <app-chart [data]="pieChartInfo"></app-chart>
+        </div>
+        <div class="col-lg-5 col-md-10 col-sm-10 card">
+            <app-chart [data]="doughnutChartInfo"></app-chart>
+        </div>
+    </div>
+</div>

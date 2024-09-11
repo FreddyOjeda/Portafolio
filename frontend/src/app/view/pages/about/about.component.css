@@ -1,0 +1,12 @@
+.container{
+    border: 5px solid var(--primary-color);
+    border-radius: 50px;
+}
+
+.container img{
+    border-radius: 50px;
+}
+
+.card{
+    border-radius: 10px;
+}

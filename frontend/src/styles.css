@@ -3,20 +3,94 @@
 /* Variables para el tema claro */
 :root {
   --background-color: #fefae0;
+  --background-color-light: #dfdbc1;
+  /* Color de fondo */
   --text-color: #171717;
+  /* Color del texto */
   --primary-color: #d4a373;
+  /* Color primario */
   --secondary-color: #d5bdaf;
-  --background-pattern: linear-gradient(45deg, #eaf0ce, #dce6ba, #ced897,#bec78c,#bbbe98);
+  /* Color secundario */
+  --border-color: #e0cfc0;
+  /* Color del borde */
+  --button-bg: #d4a373;
+  /* Fondo del botón */
+  --button-text: #ffffff;
+  /* Color del texto del botón */
+  --link-color: #d4a373;
+  /* Color de los enlaces */
+  --link-hover-color: #a57b55;
+  /* Color del enlace al pasar el ratón */
+  --shadow-light: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra ligera */
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra media */
+  --shadow-dark: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* Sombra oscura */
 }
 
 /* Variables para el tema oscuro */
 [data-theme="dark"] {
   --background-color: #171717;
+  --background-color-light: #636161;
+  /* Color de fondo */
   --text-color: #fefae0;
-  --primary-color: #023E7D;
-  --secondary-color: #0077b6;
-  --background-pattern: linear-gradient(45deg, #33415C, #023E7D, #002855, #001845, #001233);
+  /* Color del texto */
+  --primary-color: #6e2a9a;
+  /* Color primario */
+  --secondary-color: #9a41f2;
+  /* Color secundario */
+  --border-color: #3a3a3a;
+  /* Color del borde */
+  --button-bg: #6e2a9a;
+  /* Fondo del botón */
+  --button-text: #ffffff;
+  /* Color del texto del botón */
+  --link-color: #9a41f2;
+  /* Color de los enlaces */
+  --link-hover-color: #7a2a9a;
+  /* Color del enlace al pasar el ratón */
+  --shadow-light: 0 2px 5px rgba(128, 0, 128, 0.3);
+  /* Sombra ligera morada */
+  --shadow-medium: 0 4px 8px rgba(128, 0, 128, 0.5);
+  /* Sombra media morada */
+  --shadow-dark: 0 6px 12px rgba(128, 0, 128, 0.7);
+  /* Sombra oscura morada */
 }
+
+/* Estilos aplicados usando las variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-medium);
+  /* Aplicar sombra */
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.card {
+  box-shadow: var(--shadow-light);
+  /* Sombra para tarjetas */
+}
+
+.header,
+.footer {
+  box-shadow: var(--shadow-dark);
+  /* Sombra para encabezados y pies de página */
+}
+
 
 /* Aplicación de variables */
 body,
@@ -54,4 +128,4 @@ body {
 .btn-secondary {
   background-color: var(--secondary-color);
   color: var(--text-color);
-} 
+}

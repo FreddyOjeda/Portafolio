@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
   private theme: string = 'dark';
+  private themeSubject = new BehaviorSubject<string>(this.theme);
+
+  theme$ = this.themeSubject.asObservable();
 
   constructor() {
-    localStorage.setItem('theme', this.theme);
     this.loadTheme();
   }
 
@@ -21,6 +24,7 @@ export class ThemeService {
 
   private applyTheme(): void {
     document.documentElement.setAttribute('data-theme', this.theme);
+    this.themeSubject.next(this.theme); // Emite el cambio de tema
   }
 
   toggleTheme(): void {
