@@ -1,3 +1,6 @@
+.frame{
+  width: 90%;
+}
 .line {
   background-color: var(--primary-color);
   height: 2px;

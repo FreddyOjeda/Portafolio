@@ -2,7 +2,9 @@
   <div class="row d-flex justify-content-center align-items-center">
     <div class="line">
       <div class="point" *ngFor="let e of events">
-        <app-button-tooltip [title]="e.date" [description]="e.title"></app-button-tooltip>
+        <app-button-tooltip 
+          [evento]="e" >
+        </app-button-tooltip>
       </div>
     </div>
   </div>

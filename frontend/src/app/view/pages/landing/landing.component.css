@@ -1,26 +1,71 @@
+/* Estilos de la sección principal */
 .landing {
   position: relative;
 }
 
+/* CSS para la barra de navegación */
+.nav {
+  width: 100%;
+  height: 60px;
+  /* Ajusta según la altura real de tu nav */
+  background-color: var(--nav-background-color);
+  position: fixed;
+  /* Hace que el navbar esté fijo en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* Un valor suficientemente alto para que se mantenga por encima de las secciones */
+}
+
+/* Estilos de las secciones */
 .sections {
-  min-height: 100vh;
+  padding-top: 60px;
+  /* Agrega espacio para que no se sobrepongan con el navbar */
   z-index: 0;
 }
 
 section {
   width: 100%;
-  min-height: inherit;
+  min-height: 100vh;
   max-height: fit-content;
   background-color: var(--background-color);
   color: var(--text-color);
-  padding-top: 60px; /* Ajusta este valor según la altura de tu nav */
-  margin-top: -60px; /* Ajusta este valor según la altura de tu nav para contrarrestar el padding y mantener el flujo natural del documento */
+  padding-top: 60px;
+  /* Espacio para evitar que el contenido de la sección quede debajo del navbar */
+  margin-top: -60px;
+  /* Contrarresta el padding para mantener el flujo natural del documento */
 }
 
-/* CSS para la barra de navegación */
-app-nav {
-  width: 100%;
-  height: 60px; /* Ajusta según la altura real de tu nav */
-  background-color: var(--nav-background-color);
-  z-index: 1000000000; /* Asegura que la nav esté por encima de las secciones */
+@media (min-width: 1024px) {
+  .visibleDesktop {
+      display: block;
+      animation: fadeIn 1s ease-in-out;
+  }
+
+  .visibleMovile {
+      display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .visibleMovile {
+      display: block;
+      animation: fadeIn 1s ease-in-out;
+  }
+
+  .visibleDesktop {
+      display: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }

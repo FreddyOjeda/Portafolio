@@ -15,58 +15,22 @@ export interface Project {
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      title: 'E-commerce Platform',
-      description: 'An online platform to buy and sell products with a secure payment gateway.',
-      image: 'assets/images/e-commerce.webp',
-      link: 'https://myecommerceplatform.com'
+      title: 'PROJECTS.PROJECT_1.TITLE',
+      description: 'PROJECTS.PROJECT_1.DESCRIPTION',
+      image: '../../../../assets/images/wabisabi.png',
+      link: 'https://wabisabi-lu.netlify.app/'
     },
     {
-      title: 'Social Network App',
-      description: 'A full-featured social network app with real-time messaging and notifications.',
-      image: 'assets/images/social-app.webp',
-      link: 'https://mysocialnetworkapp.com'
+      title: 'PROJECTS.PROJECT_2.TITLE',
+      description: 'PROJECTS.PROJECT_2.DESCRIPTION',
+      image: '../../../../assets/images/toilsyc.png',
+      link: 'https://toilsyc.netlify.app/login'
     },
     {
-      title: 'Project Management Tool',
-      description: 'A tool to manage teams and projects, track progress, and collaborate efficiently.',
-      image: 'https://xbsoftware.com/wp-content/uploads/2021/01/project-management-solution-for-construction-industry-main.jpg',
-      link: 'https://myprojectmanagementtool.com'
-    },
-    {
-      title: 'Social Network App',
-      description: 'A full-featured social network app with real-time messaging and notifications.',
-      image: 'assets/images/social-app.webp',
-      link: 'https://mysocialnetworkapp.com'
-    },
-    {
-      title: 'Project Management Tool',
-      description: 'A tool to manage teams and projects, track progress, and collaborate efficiently.',
-      image: 'https://xbsoftware.com/wp-content/uploads/2021/01/project-management-solution-for-construction-industry-main.jpg',
-      link: 'https://myprojectmanagementtool.com'
-    },
-    {
-      title: 'Social Network App',
-      description: 'A full-featured social network app with real-time messaging and notifications.',
-      image: 'assets/images/social-app.webp',
-      link: 'https://mysocialnetworkapp.com'
-    },
-    {
-      title: 'Project Management Tool',
-      description: 'A tool to manage teams and projects, track progress, and collaborate efficiently.',
-      image: 'https://xbsoftware.com/wp-content/uploads/2021/01/project-management-solution-for-construction-industry-main.jpg',
-      link: 'https://myprojectmanagementtool.com'
-    },
-    {
-      title: 'Social Network App',
-      description: 'A full-featured social network app with real-time messaging and notifications.',
-      image: 'assets/images/social-app.webp',
-      link: 'https://mysocialnetworkapp.com'
-    },
-    {
-      title: 'Project Management Tool',
-      description: 'A tool to manage teams and projects, track progress, and collaborate efficiently.',
-      image: 'https://xbsoftware.com/wp-content/uploads/2021/01/project-management-solution-for-construction-industry-main.jpg',
-      link: 'https://myprojectmanagementtool.com'
+      title: 'PROJECTS.PROJECT_3.TITLE',
+      description: 'PROJECTS.PROJECT_3.DESCRIPTION',
+      image: '../../../../assets/images/atlantis.png',
+      link: 'https://atlantis-six.vercel.app/'
     }
   ];
 }

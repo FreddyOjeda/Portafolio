@@ -1,10 +1,10 @@
 <div class="content d-flex justify-content-center align-items-center">
     <div class="col-6 h-100 d-flex justify-content-center align-items-center">
         <div class="nav-item px-2 d-flex align-items-center">
-            <a href="#">Welcome</a>
+            <a href="#">{{ 'NAV.HOME' | translate }}</a>
         </div>
         <div class="nav-item d-flex align-items-center" *ngFor="let i of items">
-            <a href="#{{i.value}}">{{i.label}}</a>
+            <a href="#{{i.value}}">{{ i.label | translate }}</a>
         </div>
     </div>
 </div>

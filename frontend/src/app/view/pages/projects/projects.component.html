@@ -1,13 +1,14 @@
 <div class="container my-5">
-    <h2 class="text-center mb-4">My Projects</h2>
-    <div class="row">
-        <div class="col-md-6 col-lg-4" *ngFor="let project of projects">
+    <h2 class="text-center mb-4">{{ 'PROJECTS.TITLE' | translate }}</h2>
+    <span>{{ 'PROJECTS.DESCRIPTION' | translate }}</span>
+    <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" *ngFor="let p of projects">
             <div class="card project-card">
-                <img [src]="project.image" class="card-img-top" alt="{{ project.title }}">
+                <img [src]="p.image" class="card-img-top" alt="{{ p.title }}">
                 <div class="card-body">
-                    <h5 class="card-title">{{ project.title }}</h5>
-                    <p class="card-text">{{ project.description }}</p>
-                    <a [href]="project.link" class="btn btn-primary" target="_blank">View Project</a>
+                    <h5 class="card-title">{{ p.title | translate }}</h5>
+                    <p class="card-text">{{ p.description | translate }}</p>
+                    <a [href]="p.link" class="btn btn-primary" target="_blank">{{ 'PROJECTS.BUTTON' | translate }}</a>
                 </div>
             </div>
         </div>

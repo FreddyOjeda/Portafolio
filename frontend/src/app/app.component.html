@@ -1,2 +1,21 @@
-<app-toggle class="toggle" (click)="toggleTheme()"></app-toggle>
+<!-- <app-nav [items]="items"></app-nav> -->
+<div class="togles ms-auto d-flex">
+    <div class="d-flex align-items-center">
+        <div class="language d-flex justify-content-center align-items-center">
+            <div class="option w-100 h-75" *ngIf="language">
+                <button>
+                    <img class="img img-fluid" (click)="changeLanguage('en')" src="../assets/icons/colombia_18292.png" alt="Colombia">
+                </button>
+            </div>
+            <div class="option w-100 h-75" *ngIf="!language">
+                <button>
+                    <img class="img img-fluid" (click)="changeLanguage('es')" src="../assets/icons/usa_18285.png" alt="USA">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <app-toggle class="toggle" (click)="toggleTheme()"></app-toggle>
+    </div>
+</div>
 <router-outlet></router-outlet>

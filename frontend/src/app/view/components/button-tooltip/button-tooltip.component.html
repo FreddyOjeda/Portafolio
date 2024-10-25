@@ -1,10 +1,11 @@
 <div class="item-hints">
     <div class="hint" data-position="4">
         <span class="hint-radius"></span>
-        <span class="hint-dot px-3 py-1">{{title | date: 'fullDate' }}</span>
+        <span class="hint-dot px-3 py-1">{{evento.date | dateTranslate: 'fullDate' }}</span>
         <div class="hint-content do--split-children">
-            <strong>{{title | date: 'fullDate' }}</strong>
-            <p>{{description}}</p>
+            <strong>{{evento.title | translate}}</strong>
+            <img class="img img-fluid" src="{{evento.image}}" alt="">
+            <p>{{evento.description | translate}}</p>
         </div>
     </div>
 </div>

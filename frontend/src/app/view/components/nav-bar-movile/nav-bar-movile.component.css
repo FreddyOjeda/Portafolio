@@ -1,0 +1,65 @@
+/* Estilo general para el navbar */
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    position: relative;
+}
+
+/* Botón de menú */
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    cursor: pointer;
+}
+
+/* Opciones de menú (estado cerrado) */
+.menu-options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-dark);
+    
+    /* Inicialización de animación */
+    max-height: 0;
+    opacity: 0;
+    transform: scaleY(0.8);
+    transform-origin: top;
+    transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+    overflow: hidden;
+}
+
+/* Enlaces del menú */
+.menu-options a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.menu-options a:last-child {
+    border-bottom: none;
+}
+
+.menu-options a:hover {
+    background-color: #555;
+}
+
+/* Muestra el menú cuando está abierto */
+.menu-options.open {
+    max-height: 300px; /* Ajusta según la cantidad de elementos del menú */
+    opacity: 1;
+    transform: scaleY(1);
+}

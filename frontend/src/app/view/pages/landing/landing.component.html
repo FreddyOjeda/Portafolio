@@ -1,5 +1,6 @@
 <div class="landing">
-    <app-nav [items]="items"></app-nav>
+    <app-nav class="nav visibleDesktop" *ngIf="!isRootUrl" [@navbarAnimation]="isRootUrl ? 'hidden' : 'visible'" [items]="items"></app-nav>
+    <app-nav-bar-movile class="nav visibleMovile" *ngIf="!isRootUrl" [@navbarAnimation]="isRootUrl ? 'hidden' : 'visible'" [items]="items"></app-nav-bar-movile>
     <div class="sections">
         <section id="section1">
             <app-about></app-about>

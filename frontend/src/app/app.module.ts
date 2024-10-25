@@ -1,5 +1,10 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,12 +25,27 @@ import { InfoComponent } from './view/pages/info/info.component';
 import { TestComponent } from './view/pages/test/test.component';
 import { FormsModule } from '@angular/forms';
 
-import { Chart } from 'chart.js';
 import { ChartComponent } from './view/components/chart/chart.component';
 import { NgxTimelineModule } from 'ngx-timeline';
 import { MzdTimelineModule } from 'ngx-mzd-timeline/public-api';
 import { TimelineComponent } from './view/components/timeline/timeline.component';
 import { ButtonTooltipComponent } from './view/components/button-tooltip/button-tooltip.component';
+import { ProgressGroupComponent } from './view/components/progress-group/progress-group.component';
+import { SpotifyComponent } from './view/components/spotify/spotify.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TimelineMovileComponent } from './view/components/timeline-movile/timeline-movile.component';
+import { DateTranslatePipe } from './pipes/date-translate.pipe';
+import { NavBarMovileComponent } from './view/components/nav-bar-movile/nav-bar-movile.component';
+import { SimpleLoaderComponent } from './view/components/simple-loader/simple-loader.component';
+
+// Función para cargar los archivos de traducción
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
+// Registrar el idioma español
+registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
@@ -47,14 +67,34 @@ import { ButtonTooltipComponent } from './view/components/button-tooltip/button-
     TestComponent,
     ChartComponent,
     TimelineComponent,
-    ButtonTooltipComponent
+    ButtonTooltipComponent,
+    ProgressGroupComponent,
+    SpotifyComponent,
+    TimelineMovileComponent,
+    DateTranslatePipe,
+    NavBarMovileComponent,
+    SimpleLoaderComponent
   ],
   imports: [
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: LOCALE_ID, useValue: 'es' } // Configurar español como idioma predeterminado
+  ],
+  bootstrap: [AppComponent],
+  exports: [
+    DateTranslatePipe
+  ]
 })
 export class AppModule { }

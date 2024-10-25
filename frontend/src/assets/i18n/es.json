@@ -1,0 +1,81 @@
+{
+    "NAV": {
+        "HOME": "Inicio",
+        "ABOUT_ME": "Sobre mí",
+        "SKILLS": "Habilidades",
+        "HISTORY": "Historia",
+        "PROJECTS": "Proyectos",
+        "TALK_ME": "Háblame"
+    },
+    "HOME": {
+        "TITLE": "Bienvenidos",
+        "DESCRIPTION": "Soy Freddy Ojeda, un desarrollador fullstack algo creativo.",
+        "SPOTIFY": "¿Que quieres escuchar?"
+    },
+    "ABOUT": {
+        "TITLE": "¿Quien Soy?",
+        "DESCRIPTION": "Soy Freddy Ojeda, un joven apasionado por diversas áreas como el deporte, la cultura, las danzas y, especialmente, la programación y el desarrollo. Actualmente, estudio Ingeniería de Sistemas y Computación en la Universidad Pedagógica y Tecnológica de Colombia, desde mi ciudad natal, Sogamoso, Boyacá. A lo largo de mi formación, he descubierto un profundo interés por el desarrollo web y los medios audiovisuales, y aún tengo mucho por explorar en campos similares. Me considero una persona que equilibra lo profesional y lo personal, siempre en busca de nuevos retos. Disfruto explorar cosas nuevas, integrando cada experiencia con lo que ya he aprendido. No sé hasta dónde llegaré, pero estoy seguro de que cada día estaré más cerca de alcanzar mis metas las cuales, van aumentando dia a dia.",
+        "MODAL_ONE": "Deporte",
+        "MODAL_TWO": "Danza",
+        "MODAL_THREE": "Musica"
+    },
+    "SKILLS": {
+        "TITLE": "Fortalezas y Puntos Medios",
+        "DB": "Bases de Datos",
+        "DEV": "DevOps y Mas"
+    },
+    "HISTORY": {
+        "TITLE": "¿Como Ha Sido Mi Camino Hasta Hoy?",
+        "EVENT_1": {
+            "TITLE": "Ingreso a la universidad",
+            "DESCRIPTION": "En la fecha entre a estudiar ingenieria de sistemas y computacion en la UPTC seccional sogamoso."
+        },
+        "EVENT_2": {
+            "TITLE": "Inicio en el mundo laboral",
+            "DESCRIPTION": "Entro a una empresa en el area de ingenieria ocupando el puesto de desarrollador fullStack junior de manera remota."
+        },
+        "EVENT_3": {
+            "TITLE": "BootCamp de inteligencia artificial",
+            "DESCRIPTION": "Inician mis clases en un bootcamp de IA promocionado por TalentoTech y dictado en la Universidad Sergio Arboleda"
+        },
+        "EVENT_4": {
+            "TITLE": "Termina mi primera experiencia laboral",
+            "DESCRIPTION": "Se termina mi contrato como desarrollador Fullstack junior"
+        },
+        "EVENT_5": {
+            "TITLE": "Mi primer Carton Fisico",
+            "DESCRIPTION": "Termino exitosamente y me graduo del bootcamp de IA."
+        }
+    },
+    "PROJECTS": {
+        "TITLE": "Productos Publicados",
+        "DESCRIPTION": "Estos son los proyectos mas relevantes que he desarrollado, cada uno de ellos con objetivos diferentes.",
+        "BUTTON": "Ver Proyecto",
+        "PROJECT_1": {
+            "TITLE": "Plataforma de Publicacion de Productos",
+            "DESCRIPTION": "Una plataforma online para emprendedores que busquen aumentar el alcance de sus productos."
+        },
+        "PROJECT_2": {
+            "TITLE": "Prototipo de Red Social",
+            "DESCRIPTION": "Una aplicación de red social con todas las funciones, mensajería y notificaciones en tiempo real."
+        },
+        "PROJECT_3": {
+            "TITLE": "Herramienta para Gestion de Procesos",
+            "DESCRIPTION": "Una herramienta para gestionar equipos y procesos, seguir el progreso y colaborar de manera eficiente, centrándose en el contexto deportivo."
+        }
+    },
+    "INFO": {
+        "TITLE_ONE": "Envíame un mensaje",
+        "FORM": {
+            "NAME": "Nombre",
+            "EMAIL": "Correo Electrónico",
+            "MESSAGE": "Mensaje",
+            "BUTTON": "Enviar"
+        },
+        "TITLE_TWO": "Información de Contacto",
+        "PHONE": "Teléfono",
+        "EMAIL": "Correo Electrónico",
+        "DIR": "Ubicación",
+        "SUBTITLE": "Redes Sociales"
+    }
+}

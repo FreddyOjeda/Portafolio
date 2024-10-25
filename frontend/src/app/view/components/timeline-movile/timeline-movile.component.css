@@ -1,0 +1,72 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content; /* Hace que el contenedor ocupe toda la altura de la ventana */
+}
+
+.line-vertical {
+    width: 2px;
+    height: 100%; /* Hace que la línea ocupe toda la altura del contenedor */
+    position: relative; /* Esto permite posicionar los puntos con respecto a la línea */
+    background-color: var(--primary-color);
+}
+
+.point {
+    width: 200px; /* Ajuste del ancho del punto */
+    background-color: var(--background-color);
+    position: relative; /* Relativa al contenedor padre, para centrar correctamente */
+    left: -100px; /* Ajuste para centrar el punto con la línea */
+    text-align: center; /* Centra el contenido del punto */
+    padding: 10px;
+    margin: 20px 0; /* Espacio entre los puntos */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    overflow: hidden; /* Evita que el texto se salga del contenedor */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: var(--shadow-dark);
+    z-index: 1001;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.close-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+

@@ -1,0 +1,14 @@
+<div class="navbar">
+    <!-- Botón de menú -->
+    <button class="menu-button" (click)="toggleMenu()">
+      &#9776; <!-- Símbolo de hamburguesa -->
+    </button>
+  
+    <!-- Opciones del menú -->
+    <div class="menu-options" [class.open]="isMenuOpen">
+        <a href="#">{{ 'NAV.HOME' | translate }}</a>
+        <div class="my-1" *ngFor="let i of items">
+            <a href="#{{i.value}}" (click)="closeMenu()">{{ i.label | translate }}</a>
+        </div>
+    </div>
+</div>

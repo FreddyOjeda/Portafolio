@@ -1,0 +1,81 @@
+{
+    "NAV": {
+        "HOME": "Home",
+        "ABOUT_ME": "About me",
+        "SKILLS": "Skills",
+        "HISTORY": "History",
+        "PROJECTS": "Projects",
+        "TALK_ME": "Talk to me"
+    },
+    "HOME": {
+        "TITLE": "Welcome",
+        "DESCRIPTION": "I'm Freddy Ojeda, a somewhat creative fullstack developer.",
+        "SPOTIFY": "¿What do you want to hear?"
+    },
+    "ABOUT": {
+        "TITLE": "Who am I?",
+        "DESCRIPTION": "I'm Freddy Ojeda, a young man passionate about various fields such as sports, culture, dance, and especially programming and development. I am currently studying Systems and Computing Engineering at the Pedagogical and Technological University of Colombia, from my hometown, Sogamoso, Boyacá. Throughout my studies, I have discovered a deep interest in web development and audiovisual media, and I still have much to explore in similar fields. I consider myself someone who balances both professional and personal life, always in search of new challenges. I enjoy exploring new things, integrating each experience with what I have already learned. I don't know how far I will go, but I am sure that each day I will be closer to reaching my goals, which grow day by day.",
+        "MODAL_ONE": "Sports",
+        "MODAL_TWO": "Dance",
+        "MODAL_THREE": "Music"
+    },
+    "SKILLS": {
+        "TITLE": "Strengths and Midpoints",
+        "DB": "Database",
+        "DEV": "DevOps and More"
+    },
+    "HISTORY": {
+        "TITLE": "How Has My Journey Been So Far?",
+        "EVENT_1": {
+            "TITLE": "University Enrollment",
+            "DESCRIPTION": "On this date, I began studying Systems and Computing Engineering at UPTC, Sogamoso campus."
+        },
+        "EVENT_2": {
+            "TITLE": "Start in the Workforce",
+            "DESCRIPTION": "Joined a company in the engineering field, working remotely as a junior full-stack developer."
+        },
+        "EVENT_3": {
+            "TITLE": "Artificial Intelligence BootCamp",
+            "DESCRIPTION": "Started classes in an AI bootcamp promoted by TalentoTech and taught at Sergio Arboleda University."
+        },
+        "EVENT_4": {
+            "TITLE": "End of My First Work Experience",
+            "DESCRIPTION": "My contract as a junior full-stack developer ended."
+        },
+        "EVENT_5": {
+            "TITLE": "My First Physical Diploma",
+            "DESCRIPTION": "Successfully completed and graduated from the AI bootcamp."
+        }
+    },
+    "PROJECTS": {
+        "TITLE": "Published Projects",
+        "DESCRIPTION": "These are the most relevant projects I have developed, each with different goals.",
+        "BUTTON": "View Project",
+        "PROJECT_1": {
+            "TITLE": "Marketplace Platform",
+            "DESCRIPTION": "An online platform for entrepreneurs looking to increase the reach of their products."
+        },
+        "PROJECT_2": {
+            "TITLE": "Social Network Prototipe",
+            "DESCRIPTION": "A full-featured social network app with real-time messaging and notifications."
+        },
+        "PROJECT_3": {
+            "TITLE": "Process Management Tool",
+            "DESCRIPTION": "A tool to manage teams and process, track progress, and collaborate efficiently, focus on sport context."
+        }
+    },
+    "INFO": {
+        "TITLE_ONE": "Send me a message",
+        "FORM": {
+            "NAME": "Name",
+            "EMAIL": "Email",
+            "MESSAGE": "Message",
+            "BUTTON": "Send"
+        },
+        "TITLE_TWO": "Contact Information",
+        "PHONE": "Phone",
+        "EMAIL": "Email",
+        "DIR": "Location",
+        "SUBTITLE": "Social Media"
+    }
+}

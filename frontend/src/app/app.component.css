@@ -1,6 +1,29 @@
-.toggle{
+.togles {
     position: fixed;
     top: 1%;
     right: 1%;
     z-index: 100000000000;
+    width: fit-content;
+    height: fit-content;
+}
+
+.language {
+    width: 50px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+app-nav {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 60px;
+    /* Ajusta según la altura real de tu nav */
+    background-color: var(--nav-background-color);
+    z-index: 1000000000;
+    /* Asegura que la nav esté por encima de las secciones */
 }

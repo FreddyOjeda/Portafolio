@@ -1,0 +1,18 @@
+<div class="main">
+    <div class="line-vertical">
+        <div class="point my-5 py-2" *ngFor="let e of events" (click)="openModal(e)">
+            <span>{{e.date | dateTranslate: 'fullDate' }}</span>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div *ngIf="selectedEvent" class="modal-overlay" (click)="closeModal($event)">
+        <div class="modal-content" (click)="$event.stopPropagation()">
+            <h2>{{ selectedEvent.title | translate }}</h2>
+            <p>{{ selectedEvent.date | dateTranslate: 'fullDate' }}</p>
+            <img src="{{selectedEvent.image}}" alt="">
+            <p>{{ selectedEvent.description | translate }}</p>
+            <button class="close-button" (click)="closeModal()">Close</button>
+        </div>
+    </div>
+</div>

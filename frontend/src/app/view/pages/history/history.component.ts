@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TimelineEvent } from 'src/app/models/timeline-event.interface';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-history',
@@ -9,34 +10,37 @@ import { TimelineEvent } from 'src/app/models/timeline-event.interface';
 export class HistoryComponent {
   eventList = [
     {
-      date: new Date('2023-01-15'),
-      title: 'Launch of the Project',
-      description: 'The project was officially launched with a kick-off meeting.',
-      image: 'assets/images/launch.jpg'
+      date: new Date(Date.UTC(2019,3,8,12)),
+      title: 'HISTORY.EVENT_1.TITLE',
+      description: 'HISTORY.EVENT_1.DESCRIPTION',
+      image: 'assets/images/uptc-sogamoso.jpg'
     },
     {
-      date: new Date('2023-02-10'),
-      title: 'First Milestone',
-      description: 'The team successfully completed the first milestone of the project.',
-      image: 'assets/images/milestone1.jpg'
+      date: new Date(Date.UTC(2023,2,27,12)),
+      title: 'HISTORY.EVENT_2.TITLE',
+      description: 'HISTORY.EVENT_2.DESCRIPTION',
+      image: '../../../../assets/images/full-stack.webp'
     },
     {
-      date: new Date('2023-03-05'),
-      title: 'Client Presentation',
-      description: 'Presented the project progress to the client for feedback.',
-      image: 'assets/images/presentation.jpg'
+      date: new Date(Date.UTC(2024,3,4,12)),
+      title: 'HISTORY.EVENT_3.TITLE',
+      description: 'HISTORY.EVENT_3.DESCRIPTION',
+      image: '../../../../assets/images/talentotech.png'
     },
     {
-      date: new Date('2023-04-20'),
-      title: 'Feature Release',
-      description: 'Released the first major feature of the project to production.'
+      date: new Date(Date.UTC(2024,7,1,12)),
+      title: 'HISTORY.EVENT_4.TITLE',
+      description: 'HISTORY.EVENT_4.DESCRIPTION',
+      image: '../../../../assets/images/freelancer.jpg'
     },
     {
-      date: new Date('2023-06-15'),
-      title: 'Project Completion',
-      description: 'The project was completed and handed over to the client.',
-      image: 'assets/images/completion.jpg'
+      date: new Date(Date.UTC(2024,7,16,12)),
+      title: 'HISTORY.EVENT_5.TITLE',
+      description: 'HISTORY.EVENT_5.DESCRIPTION',
+      image: '../../../../assets/images/certificado.png'
     }
   ];
+
+  constructor(private httpClient: HttpClient){}
 
 }

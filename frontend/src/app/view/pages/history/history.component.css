@@ -1,3 +1,37 @@
-.row{
-    min-height: 100vh;
+.tlcontainer {
+    min-height: 80vh;
+}
+
+@media (min-width: 1024px) {
+    .visibleDesktop {
+        display: block;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .visibleMovile {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .visibleMovile {
+        display: block;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .visibleDesktop {
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

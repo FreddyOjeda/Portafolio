@@ -1,5 +1,5 @@
 /* styles.css */
-
+@import "~notyf/notyf.min.css";
 /* Variables para el tema claro */
 :root {
   --background-color: #fefae0;

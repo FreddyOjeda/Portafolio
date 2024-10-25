@@ -1,17 +1,16 @@
 <div class="container">
-    <h2>Dashboard</h2>
+    <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
     <div class="row d-flex justify-content-around">
-        <div class="col-lg-5 col-md-10 col-sm-10 card">
-            <app-chart [data]="barChartInfo"></app-chart>
+        <div class="col-lg-5 col-md-10 col-sm-10">
+            <app-progress-group></app-progress-group>
         </div>
-        <div class="col-lg-5 col-md-10 col-sm-10 card">
-            <app-chart [data]="lineChartInfo"></app-chart>
-        </div>
-        <div class="col-lg-5 col-md-10 col-sm-10 card">
-            <app-chart [data]="pieChartInfo"></app-chart>
-        </div>
-        <div class="col-lg-5 col-md-10 col-sm-10 card">
-            <app-chart [data]="doughnutChartInfo"></app-chart>
+        <div class="col-lg-5 col-md-10 col-sm-10">
+            <div class="col-12 card">
+                <app-chart [data]="radarChartInfo"></app-chart>
+            </div>
+            <div class="col-12 card">
+                <app-chart [data]="doughnutChartInfo"></app-chart>
+            </div>
         </div>
     </div>
 </div>

@@ -8,7 +8,7 @@ import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 })
 export class ToggleComponent implements OnInit{
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
   @Output() click = new EventEmitter<void>();
 
